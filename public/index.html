@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share Sandbox</title>
+
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/channel/bcsocket.js"></script>
+    <script src="/share/share.js"></script>
+    <script src="/share/ace.js"></script>
+    <script src="/script/main.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="editor"></div>
+    <iframe id="run" sandbox="allow-scripts" src="idle.html"></iframe>
+    <div id="toolbar">
+        <button id="vim">toggle vim</button><button id="run">run</button><button id="stop">stop</button>
+    </div>
+</body>
+</html>
