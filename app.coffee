@@ -64,6 +64,7 @@ sandbox = """
     <meta charset="UTF-8">
     <title>Run Sandbox</title>
     <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/gl-matrix-min.js"></script>
     <script src="/main.latest.js"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
