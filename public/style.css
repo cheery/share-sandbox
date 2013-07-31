@@ -3,7 +3,6 @@
 
 body {
     overflow: hidden;
-
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.2em;
@@ -11,15 +10,15 @@ body {
 #editor {
     margin: 0;
     position: absolute;
-    top: 0;
-    bottom: 20px;
+    top: 34px;
+    bottom: 0;
     left: 0;
     right: 50%;
 }
 iframe#run {
     margin: 0;
     position: absolute;
-    top: 0;
+    top: 34px;
     bottom: 0;
     right: 0;
     width: 50%;
@@ -72,23 +71,27 @@ div.under {
 div#toolbar {
     margin: 0;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    height: 20px;
-    background: black;
-    width: 50%;
+    height: 34px;
+    background: #888;
+    width: 100%;
 }
 
 div#toolbar button {
-    height: 20px;
     margin: 0;
-    padding: 0 1ex;
-    border: 1px solid #222;
+    font-size: 12px;
+    height: 31px;
+    padding: 7px 1ex;
+    margin: 1px;
+    border: 1px solid #666;
     cursor: pointer;
-    color: #888;
-    background: black;
-    width: 15ex;
+    color: #000;
+    background: #AAA;
+    width: 20ex;
+    border-radius: 4px;
 }
-div#toolbar button:active {
-    background: white;
+
+div#toolbar button.right {
+    float: right;
 }
