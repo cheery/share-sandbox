@@ -39,6 +39,7 @@ $(function(){
             vim = true;
             editor.setKeyboardHandler("ace/keyboard/vim");
         }
+        editor.focus();
     });
 
     $('button#run').click(function(){
@@ -47,5 +48,6 @@ $(function(){
 
     $('button#stop').click(function(){
         $('iframe#run').attr('src', '/idle.html');
+        editor.focus();
     });
 });

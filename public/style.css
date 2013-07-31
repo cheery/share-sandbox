@@ -16,14 +16,18 @@ body {
     right: 50%;
 }
 iframe#run {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+div.demo {
     margin: 0;
     position: absolute;
     top: 34px;
     bottom: 0;
     right: 0;
     width: 50%;
-    height: 100%;
-    border: none;
 }
 canvas {
     margin: 0;
@@ -84,12 +88,18 @@ div#toolbar button {
     height: 31px;
     padding: 7px 1ex;
     margin: 1px;
-    border: 1px solid #666;
+    border: 1px solid rgb(78,78,78);
     cursor: pointer;
     color: #000;
-    background: #AAA;
+    background: #DBDBDB;
     width: 20ex;
     border-radius: 4px;
+}
+button#run {
+    background: #9DDAA2 !important;
+}
+button#stop {
+    background: #DA9D9D !important;
 }
 
 div#toolbar button.right {
